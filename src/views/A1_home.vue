@@ -8,9 +8,6 @@ import { useRouter } from "vue-router";
 
 const router = useRouter();
 
-const goToReservation = () => {
-  router.push("/reservation");
-};
 // top버튼
 const smoothlyBtn = ref(null);
 onMounted(() => {
@@ -81,10 +78,14 @@ const mainBannerData = ref([
   <!-- gotop 버튼 -->
   <div class="topBtnWrap">
     <a href="#" class="topBtn" ref="smoothlyBtn">↑</a>
-    <div class="resBtn" @click="goToReservation" style="cursor: pointer">
+    <div class="resBtn"  style="cursor: pointer">
       <img src="/images/hong/gotopBtn-logo-O.png" alt="gotopBtn로고" />
       <p>고용하기</p>
     </div>
+    <!-- <div class="resBtn" @click="goToReservation" style="cursor: pointer">
+      <img src="/images/hong/gotopBtn-logo-O.png" alt="gotopBtn로고" />
+      <p>고용하기</p>
+    </div>-->
   </div>
 
   <div class="main-wrap">
