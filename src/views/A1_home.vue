@@ -4,7 +4,13 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/autoplay";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
+
+const goToReservation = () => {
+  router.push("/reservation");
+};
 // top버튼
 const smoothlyBtn = ref(null);
 onMounted(() => {
@@ -73,12 +79,12 @@ const mainBannerData = ref([
 
 <template>
   <!-- gotop 버튼 -->
-<div class="topBtnWrap">
+  <div class="topBtnWrap">
     <a href="#" class="topBtn" ref="smoothlyBtn">↑</a>
-    <router-link to="/reservation" class="resBtn">
-      <img src="/public/images/hong/gotopBtn-logo-O.png" alt="gotopBtn로고" />
+    <div class="resBtn" @click="goToReservation" style="cursor: pointer">
+      <img src="/images/hong/gotopBtn-logo-O.png" alt="gotopBtn로고" />
       <p>고용하기</p>
-    </router-link>
+    </div>
   </div>
 
   <div class="main-wrap">
