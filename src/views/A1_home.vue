@@ -78,7 +78,7 @@ const mainBannerData = ref([
   <!-- gotop 버튼 -->
   <div class="topBtnWrap">
     <a href="#" class="topBtn" ref="smoothlyBtn">↑</a>
-    <div class="resBtn"  style="cursor: pointer">
+    <div class="resBtn" style="cursor: pointer">
       <img src="/images/hong/gotopBtn-logo-O.png" alt="gotopBtn로고" />
       <p>고용하기</p>
     </div>
@@ -137,7 +137,137 @@ const mainBannerData = ref([
         </div>
       </div>
     </section>
+    <!-- 이용안내 -->
+    <!-- 짐배송 영역 -->
+    <section class="delivery-wrap">
+      <!--  -->
+      <!-- 1. 빠른 배송 서비스 -->
+      <div class="fast-delivery inner">
+        <h4 class="fast-dv-title">짐꾼의 빠른 <span>배송</span> 서비스</h4>
+        <!-- 빠른 배송 서비스 순서 -->
+        <ul class="fast-index">
+          <li>
+            <!-- <div class="a2-next-1"></div> -->
+            <div class="fast-list1 fast-list">
+              <h4>예약/결제</h4>
+              <p>
+                <span>예약 완료 시 <strong>카카오톡 알림</strong></span>
+              </p>
+              <div class="fast-line"></div>
+              <div class="fast-icon">
+                <span>01</span>
+                <img src="/images/lee/fastIcon1.png" alt="예약/결제 이미지" />
+              </div>
+            </div>
+            <!-- <div class="a2-next">
+              <img src="/images/lee/nextstep.png" alt="화살표" />
+            </div> -->
+          </li>
+          <li>
+            <div class="fast-list2 fast-list">
+              <h4>집앞 픽업</h4>
+              <p>
+                <strong>집앞</strong>에 짐을 두면 <br />
+                짐꾼이 새벽픽업!
+              </p>
+              <div class="fast-line"></div>
+              <div class="fast-icon">
+                <span>02</span>
+                <img src="/images/lee/fastIcon2.png" alt="집 앞 픽업" />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="fast-list3 fast-list">
+              <h4>빠른 배송</h4>
+              <p>
+                체크인 시간까지 <br />
+                짐꾼이 <strong>빠르게</strong> 배송!
+              </p>
+              <div class="fast-line"></div>
+              <div class="fast-icon">
+                <span>03</span>
+                <img src="/images/lee/fastIcon3.png" alt="예약/결제 이미지" />
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="fast-list4 fast-list">
+              <h4>예약/결제</h4>
+              <p>
+                숙소와 상의 후 <br />
+                <strong>안전한</strong> 장소에 도착!
+              </p>
+              <div class="fast-line"></div>
+              <div class="fast-icon">
+                <span>04</span>
+                <img src="/images/lee/fastIcon4.png" alt="예약/결제 이미지" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--  -->
+      <!-- 2. 배송 위치 -->
+      <div class="dv-position">
+        <ul class="position-list inner">
+          <li class="pst-list1">
+            <div class="title-icon">
+              <h4 class="pst-title">집 - 숙소</h4>
+              <ul class="pst-icon">
+                <li><img src="/images/lee/house.png" alt="집아이콘" /></li>
+                <li><img src="/images/lee/arrow.png" alt="화살표" /></li>
+                <li>
+                  <img src="/images/lee/arrival.png" alt="도착아이콘" />
+                </li>
+              </ul>
+            </div>
+            <ul class="pst-text">
+              <li>1.가방은 문앞에! 픽업은 새벽에!</li>
+              <li>2.체크인 시간에 맞춰 배송</li>
+              <li>3.<span>비대면</span>으로 편리하게</li>
+            </ul>
+          </li>
+          <li class="pst-list2">
+            <div class="title-icon">
+              <h4 class="pst-title">공항 - 집</h4>
+              <ul class="pst-icon">
+                <li>
+                  <img src="/images/lee/airplane.png" alt="비행기아이콘" />
+                </li>
+                <li><img src="/images/lee/arrow.png" alt="화살표" /></li>
+                <li><img src="/images/lee/house.png" alt="집아이콘" /></li>
+              </ul>
+            </div>
+            <ul class="pst-text">
+              <li>1.픽업한 가방은 무인보관함에!</li>
+              <li>2.고객님의 <span>요청사항</span>에 맞춰 전달</li>
+            </ul>
+          </li>
+          <li class="pst-list3">
+            <div class="title-icon">
+              <h4 class="pst-title">공항 - 숙소</h4>
+              <ul class="pst-icon">
+                <li>
+                  <img src="/images/lee/airplane.png" alt="비행기아이콘" />
+                </li>
+                <li><img src="/images/lee/arrow.png" alt="화살표" /></li>
+                <li>
+                  <img src="/images/lee/arrival.png" alt="도착아이콘" />
+                </li>
+              </ul>
+            </div>
+            <ul class="pst-text">
+              <li>1.공항 <span>무인보관함</span>에 짐 넣기</li>
+              <li>2.체크인 시간에 맞춰 배송</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="dv-position-bg"></div>
+      </div>
 
+      <!--  -->
+    </section>
     <!-- 파트 1 -->
     <section class="a1-part1 inner">
       <div class="a1-part1-title">
@@ -383,6 +513,405 @@ const mainBannerData = ref([
   margin: 0 auto;
   padding: 0 20px;
 }
+.delivery-wrap {
+  display: flex;
+  flex-direction: column;
+}
+// 짐배송 영역
+// 1. 빠른 배송 서비스
+.fast-delivery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 390px) {
+    padding-top: 100px;
+  }
+  .fast-dv-title {
+    font-weight: 600;
+    font-size: $title-font-M;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    @media screen and (max-width: 390px) {
+      margin-bottom: 30px;
+      font-size: 30px !important;
+    }
+    span {
+      color: $primary-color;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: $title-font-S;
+    }
+    @media screen and (max-width: 390px) {
+      font-size: $title-font-XS;
+    }
+  }
+  .fast-index {
+    width: 100%;
+    // min-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      position: relative;
+      width: calc(100% / 4);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .fast-list {
+        width: 90%;
+        max-width: 240px;
+        min-width: 160px;
+        max-height: 326px;
+        border: 1px solid rgba(229, 229, 236, 1);
+        border-radius: 10px;
+        box-shadow: $info-boxShadow;
+      }
+      .fast-list1,
+      .fast-list2,
+      .fast-list3 {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(50%, -50%);
+          display: block;
+          width: 16px;
+          height: 24px;
+          background: url("/images/lee/nextstep.png");
+        }
+      }
+
+      .fast-list1 {
+        p {
+          display: flex;
+          align-items: center;
+        }
+      }
+      div {
+        padding: 0 25px;
+        h4 {
+          font-size: $text-font-XL;
+          font-weight: bold;
+          margin-top: 40px;
+        }
+        p {
+          margin: 18px 0;
+          font-size: $text-font-M;
+          color: $font-gray;
+          line-height: 1.4;
+          min-height: 45px;
+          strong {
+            color: $font-primary;
+            font-weight: 600;
+          }
+        }
+        .fast-line {
+          width: 100%;
+          padding: 0 25px;
+          height: 2px;
+          background-color: $bg-light;
+          margin: 0;
+        }
+        .fast-icon {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin: 0;
+          margin-top: 25px;
+          padding: 0;
+          span {
+            font-weight: bold;
+            font-size: $text-font-XL;
+            color: $primary-color;
+          }
+          img {
+            margin-top: 25px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+// 2. 배송위치
+.dv-position {
+  position: relative;
+  width: 100%;
+  background-color: $sub-color;
+  .position-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 70px;
+    > li {
+      width: calc(100% / 3);
+      max-width: 390px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      padding-bottom: 70px;
+      .title-icon {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .pst-title {
+          padding-top: 55px;
+          padding-bottom: 40px;
+          font-size: $title-font-S;
+          font-weight: bold;
+          text-align: center;
+        }
+        .pst-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          li {
+            &:nth-child(2) {
+              max-width: 44px;
+            }
+            &:first-child {
+              min-width: 70px;
+            }
+            &:last-child {
+              min-width: 70px;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .pst-text {
+        padding-top: 55px;
+        padding-bottom: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        li {
+          width: 100%;
+          max-width: 250px;
+          font-weight: 500;
+          font-size: $text-font-L;
+          color: $font-gray;
+          span {
+            color: $primary-color;
+            font-size: $text-font-XL;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .dv-position-bg {
+    position: absolute;
+    width: 100%;
+    max-width: 5000px;
+    // height: 100%;
+    background-color: $sub-color;
+    z-index: -1;
+  }
+}
+// 반응형
+@media screen and (max-width: 768px) {
+  .fast-index li {
+    width: calc(100% / 2) !important;
+    max-width: 240px !important;
+    margin-top: 20px;
+  }
+  .position-list {
+    // flex-wrap: wrap !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .position-list > li {
+    width: 100% !important;
+    // width: calc(100% / 2) !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-around;
+    // gap: 30px;
+    padding: 40px 0 !important;
+    max-width: none !important;
+    @media screen and (max-width: 390px) {
+      flex-direction: column !important;
+    }
+  }
+  .title-icon {
+    gap: 20px;
+  }
+  .pst-title {
+    padding: 0 !important;
+    font-size: $title-font-XS !important;
+  }
+  .pst-text {
+    padding: 0 !important;
+  }
+  .pst-icon {
+    width: 70%;
+    min-width: 180px;
+  }
+  .inqu-diff {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .inqu-diff-wrap {
+    flex-direction: column !important;
+    gap: 50px;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .inquire,
+  .diffcult {
+    width: 100% !important;
+    padding: 50px 30px;
+  }
+  .diffcult {
+    // background-color: $sub-color;
+
+    margin-top: 80px;
+    position: relative;
+  }
+  .iq-textp,
+  .dc-textp {
+    font-size: 18px !important;
+  }
+  .iq-text span,
+  .dc-text span {
+    font-size: 20px !important;
+  }
+  .diff-bg {
+    display: block !important;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: $sub-color;
+    z-index: -1;
+  }
+  .careful-title {
+    font-size: $title-font-L !important;
+  }
+  .careful-list {
+    font-size: $text-font-S !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pst-title {
+    font-size: $text-font-XL !important;
+  }
+  .pst-text li {
+    font-size: $text-font-M !important;
+  }
+  .pst-text span {
+    font-size: $text-font-L !important;
+  }
+  .inquire-menu,
+  .diffcult-menu {
+    gap: 30px !important;
+  }
+  .iq-textp,
+  .dc-textp {
+    font-size: $text-font-M !important;
+  }
+  .inquire-list,
+  .diffcult-list {
+    min-width: 360px;
+    gap: 5px !important;
+  }
+  .dc-icon {
+    width: 90px !important;
+    height: 80px !important;
+  }
+  .iq-textp span,
+  .dc-textp span {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pst-title {
+    font-size: $text-font-L !important;
+  }
+  .pst-text li {
+    font-size: $text-font-S !important;
+  }
+  .pst-text span {
+    font-size: $text-font-M !important;
+  }
+  .inquire,
+  .diffcult {
+    padding: 50px 10px;
+  }
+  .iq-textp,
+  .dc-textp {
+    font-size: $text-font-S !important;
+  }
+  .iq-textp span,
+  .dc-textp span {
+    font-size: 16px !important;
+  }
+
+  .careful-list {
+    font-size: $text-font-XS !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .pst-text li {
+    font-size: $text-font-XS !important;
+  }
+  .pst-text span {
+    font-size: $text-font-S !important;
+  }
+  .pst-icon {
+    width: 70%;
+    min-width: 170px;
+    @media screen and (max-width: 390px) {
+      width: 100%;
+    }
+  }
+  .pst-icon img {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .info-tap h3 span {
+    font-size: $text-font-M !important;
+  }
+  .fast-list h4 {
+    font-size: $text-font-L !important;
+  }
+  .fast-list p {
+    font-size: $text-font-S !important;
+  }
+  .fast-list p span {
+    font-size: $text-font-S !important;
+  }
+  .fast-icon span {
+    font-size: $text-font-L !important;
+  }
+  .fast-list3 .fast-icon img {
+    width: 90%;
+  }
+  .fast-icon img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .inquire,
+  .diffcult {
+    padding: 50px 5px;
+  }
+}
 // gotop 버튼
 .topBtnWrap {
   position: fixed;
@@ -393,6 +922,7 @@ const mainBannerData = ref([
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
   .topBtn {
     color: $primary-color;
     font-size: 40px;
@@ -429,6 +959,7 @@ const mainBannerData = ref([
   .visual {
     width: 100%;
     position: relative;
+
     .swiper-wrapper {
       width: 100%;
       .slide {
@@ -686,9 +1217,13 @@ const mainBannerData = ref([
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
+    @media screen and (max-width: 390px) {
+      display: block;
+    }
     /* 타이틀 */
     .a1-part1-title {
       width: 25%;
+
       h3 {
         font-size: $title-font-M;
         font-weight: bold;
@@ -1013,29 +1548,44 @@ const mainBannerData = ref([
           flex-direction: column !important;
           gap: 50px !important;
         }
+        @media screen and (max-width: 390px) {
+          width: 350px;
+        }
         // 1
         .t-content1 {
           display: flex;
           align-items: center;
           gap: 75px;
+          @media screen and (max-width: 390px) {
+            gap: 15px;
+          }
         }
         // 2
         .t-content2 {
           display: flex;
           align-items: center;
           gap: 75px;
+          @media screen and (max-width: 390px) {
+            gap: 15px;
+          }
         }
         // 3
         .t-content3 {
           display: flex;
           align-items: center;
           gap: 75px;
+          @media screen and (max-width: 390px) {
+            gap: 15px;
+          }
         }
         // 4
         .t-content4 {
           display: flex;
           align-items: center;
           gap: 75px;
+          @media screen and (max-width: 390px) {
+            gap: 15px;
+          }
         }
         // 왼쪽 아이콘 영역
         .t-1-icon {
@@ -1050,6 +1600,9 @@ const mainBannerData = ref([
           h3 {
             font-size: $title-font-S;
             font-weight: 600; //semibold
+            @media screen and (max-width: 390px) {
+              font-size: 20px;
+            }
           }
         }
         // 왼쪽 말풍선 영역
@@ -1060,6 +1613,10 @@ const mainBannerData = ref([
           padding: 30px;
           border-radius: 10px;
           border-bottom-left-radius: 0;
+          @media screen and (max-width: 390px) {
+            border-radius: 0px;
+            padding: 15px;
+          }
           &::after {
             content: "";
             position: absolute;
@@ -1071,6 +1628,9 @@ const mainBannerData = ref([
             height: 0;
             border-left: 30px solid transparent;
             border-top: 25px solid $white;
+            @media screen and (max-width: 390px) {
+              display: none;
+            }
           }
           h2 {
             font-size: $text-font-M;
@@ -1091,6 +1651,12 @@ const mainBannerData = ref([
           padding: 30px;
           border-radius: 10px;
           border-bottom-right-radius: 0;
+          @media screen and (max-width: 390px) {
+            border-radius: 0px;
+
+            padding: 15px;
+          }
+
           &::after {
             content: "";
             position: absolute;
@@ -1103,6 +1669,9 @@ const mainBannerData = ref([
             // border-left: 50px solid transparent;
             border-right: 30px solid transparent;
             border-top: 25px solid $white;
+            @media screen and (max-width: 390px) {
+              display: none;
+            }
           }
           h2 {
             font-size: $text-font-M;
@@ -1128,9 +1697,13 @@ const mainBannerData = ref([
           h3 {
             font-size: $title-font-S;
             font-weight: 600; //semibold
+            @media screen and (max-width: 390px) {
+              font-size: 20px;
+            }
           }
         }
       }
+      // 390용
     }
   }
   // part 3
@@ -1270,11 +1843,15 @@ const mainBannerData = ref([
         font-size: $title-font-XS;
         font-weight: 700;
         margin-bottom: 9px;
+        line-height: 1.4;
       }
       p {
         font-size: $text-font-XS;
         line-height: 14px;
         color: $font-gray;
+        @media screen and (max-width: 390px) {
+          line-height: 10px;
+        }
       }
       .couponImg {
         margin-top: 18px;
@@ -1374,7 +1951,8 @@ const mainBannerData = ref([
 @media screen and (max-width: 768px) {
   // gotop 버튼
   .topBtnWrap {
-    display: none !important;
+    // display: none !important;
+    right: 15px;
   }
   // 파트1 영역
   .a1-part1 {
@@ -1486,8 +2064,15 @@ const mainBannerData = ref([
   }
 }
 @media screen and (max-width: 403px) {
+  .a1-part1-title {
+    width: 200px !important;
+    margin: auto;
+  }
   .a1-part1-title h3 {
-    font-size: 20px !important;
+    font-size: 30px !important;
+  }
+  .part1-img {
+    flex: 1.7 !important;
   }
 }
 </style>
